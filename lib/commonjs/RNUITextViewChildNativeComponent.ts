@@ -31,6 +31,7 @@ type TextAlign = 'auto' | 'left' | 'right' | 'center' | 'justify'
 interface NativeProps extends ViewProps {
   text: string
   color?: ColorValue
+  selectionColor?: ColorValue
   fontSize?: Float
   fontStyle?: WithDefault<FontStyle, 'normal'>
   fontWeight?: WithDefault<NativeFontWeight, 'normal'>

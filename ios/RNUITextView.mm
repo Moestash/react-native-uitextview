@@ -140,12 +140,6 @@ using namespace facebook::react;
     UIColor *color = RCTUIColorFromSharedColor(newViewProps.selectionColor);
 
     _textView.tintColor = color;
-
-    if (@available(iOS 15.0, *)) {
-      _textView.textSelectionHighlightColor = color;
-    } else {
-      _textView.selectedTextRange = _textView.selectedTextRange;
-    }
   }
 
   // I'm not sure if this is really the right way to handle this style. This means that the entire _view_ the text
