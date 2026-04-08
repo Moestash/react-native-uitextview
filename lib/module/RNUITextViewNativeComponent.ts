@@ -1,5 +1,5 @@
 import codegenNativeComponent from 'react-native/Libraries/Utilities/codegenNativeComponent'
-import type {ViewProps} from 'react-native'
+import type {ColorValue, ViewProps} from 'react-native'
 import type {
   BubblingEventHandler,
   Int32,
@@ -17,6 +17,7 @@ interface TextLayoutEvent extends TargetedEvent {
 type EllipsizeMode = 'head' | 'middle' | 'tail' | 'clip'
 
 interface NativeProps extends ViewProps {
+  selectionColor?: ColorValue
   numberOfLines?: Int32
   allowFontScaling?: WithDefault<boolean, true>
   ellipsizeMode?: WithDefault<EllipsizeMode, 'tail'>
