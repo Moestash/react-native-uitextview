@@ -75,4 +75,4 @@ android/keystores/debug.keystore
 .turbo/
 
 Podfile.lock
-.xcode.env
+.xcode.env*
